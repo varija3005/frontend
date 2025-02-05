@@ -1,0 +1,208 @@
+.landing-section {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(23, 59, 69, 0.7) 10%,
+        rgba(23, 59, 69, 0.7)
+      ),
+      url("../../Assets/LandingSection/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: slideshow;
+    animation-duration: 20s;
+    animation-timing-function: cubic-bezier(1,0,0,1);
+    animation-iteration-count: infinite;
+  
+    .logo-container {
+      position: absolute;
+      left: 6rem;
+      top: 3rem;
+      width: 10rem;
+  
+      img {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+      }
+    }
+  
+    .text {
+      width: 50%;
+      padding: 5em 0 1em 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: rgba( 23, 59, 69, 0.7 );
+      box-shadow: 0 8px 32px 0 rgba( 23, 59, 69, 0.7 );
+      backdrop-filter: blur( 7px );
+      -webkit-backdrop-filter: blur( 7px );
+      border-radius: 10px;
+      //border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+      .name{
+        font-family: "Playfair Display", serif;
+        font-weight: 700;
+        font-style: normal;
+        padding: 10px 0 20px 0;
+        font-size: 12rem;
+        color: #E7D3B2;
+        letter-spacing: -2px;
+        line-height: 100%;
+      }
+
+      .sub-heading{
+        color: white;
+        font-family: "Inria Sans", serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 2.4em;
+        letter-spacing: 2.4px;
+      }
+
+      .links{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 3em;
+      }
+  
+      .button {
+        text-decoration: none;
+        background-color: transparent;
+        border: 1px solid #E7D3B2;
+        outline: none;
+        padding: 1rem 2rem;
+        color: #E7D3B2;
+        font-size: 2rem;
+        font-family: "Roboto Flex", serif;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: 3px;
+        margin: 4rem 0;
+        cursor: pointer;
+        transition: 0.5s;
+  
+        &:hover,
+        &:active {
+          background: #E7D3B2;
+          color: #173B45;
+        }
+      }
+    }
+  }
+
+  @keyframes slideshow {
+    0% { background-image: linear-gradient(
+                              to right bottom,
+                              rgba(23, 59, 69, 0.7) 10%,
+                              rgba(23, 59, 69, 0.7)
+                            ), url("../../Assets/LandingSection/background.jpg"); }
+    16% { background-image: linear-gradient(
+                              to right bottom,
+                              rgba(23, 59, 69, 0.7) 10%,
+                              rgba(23, 59, 69, 0.7)
+                            ), url("../../Assets/LandingSection/background2.jpg"); }
+    33% { background-image: linear-gradient(
+                              to right bottom,
+                              rgba(23, 59, 69, 0.7) 10%,
+                              rgba(23, 59, 69, 0.7)
+                            ), url("../../Assets/LandingSection/background3.jpg"); }
+    50% { background-image: linear-gradient(
+                              to right bottom,
+                              rgba(23, 59, 69, 0.7) 10%,
+                              rgba(23, 59, 69, 0.7)
+                            ),url("../../Assets/LandingSection/background4.jpg"); }
+    66% { background-image: linear-gradient(
+                              to right bottom,
+                              rgba(23, 59, 69, 0.7) 10%,
+                              rgba(23, 59, 69, 0.7)
+                            ),url("../../Assets/LandingSection/background5.jpg"); }
+    84% { background-image: linear-gradient(
+                              to right bottom,
+                              rgba(23, 59, 69, 0.7) 10%,
+                              rgba(23, 59, 69, 0.7)
+                            ),url("../../Assets/LandingSection/background6.jpg"); }
+    100% { background-image: linear-gradient(
+                              to right bottom,
+                              rgba(23, 59, 69, 0.7) 10%,
+                              rgba(23, 59, 69, 0.7)
+                            ),url("../../Assets/LandingSection/background.jpg"); }
+  }
+  
+  @media only screen and (max-width: 1100px) {
+    .landing-section {
+      .text {
+        width: 60%;
+
+        .name{
+          font-size: 10rem;
+        }
+
+        .sub-heading{
+          font-size: 2rem;
+        }
+
+        .links{
+          padding-top: 2rem;
+        }
+
+        .button{
+          font-size: 1.6rem;
+          margin: 3rem 0;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .landing-section {
+      .text {
+        width: 65%;
+        text-align: center;
+
+        .name {
+          font-size: 6rem;
+          letter-spacing: 3.5px;
+        }
+
+        .sub-heading{
+          font-size: 1.8rem;
+          letter-spacing: 1.5px;
+        }
+
+        .links{
+          padding-top: 1rem;
+          flex-direction: column;
+          padding-bottom: 4rem;
+        }
+
+        .button{
+          font-size: 1.4rem;
+          margin: 0;
+          margin-top: 2rem;
+          letter-spacing: 1.8px;
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 470px) {
+    .landing-section {
+      .logo-container {
+        left: 3rem;
+      }
+      .text {
+        width: 75%;
+      }
+    }
+  }

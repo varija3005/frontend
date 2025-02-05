@@ -1,0 +1,104 @@
+.login-icon{
+    position: absolute;
+    top: 3rem;
+    right: 18rem;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    height: 10rem;
+
+    .options{
+        .option{
+            font-family: "Roboto Flex", serif;
+            font-weight: 300;
+            font-style: normal;
+            letter-spacing: 3px;
+            font-size: 2rem;
+            text-decoration: none;
+
+            &:first-of-type{
+                margin-right: 5rem;
+            }
+        }
+
+        .option-light{
+          color: #E7D3B2;
+    
+          &:hover{
+            color: #D8B590;
+          }
+        }
+    
+        .option-dark{
+          color: #173B45;
+    
+          &:hover{
+            color: #224b56;
+          }
+        }
+    }
+
+    .icons{
+        .icon{
+            letter-spacing: 3px;
+            font-size: 3rem;
+            text-decoration: none;
+            background-color: transparent;
+
+            &:first-child{
+                margin-right: 5rem;
+            }
+        }
+
+        .icon-light{
+          color: #E7D3B2;
+    
+          &:hover{
+            color: #D8B590;
+          }
+        }
+    
+        .icon-dark{
+          color: #173B45;
+    
+          &:hover{
+            color: #224b56;
+          }
+        }
+    }
+}
+
+.szh-menu {
+    font-family: "Roboto Flex", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.6rem;
+    text-decoration: none;
+    padding: 2rem 0;
+    background: #E7D3B2;
+  
+    &--state-opening {
+      animation: szh-menu-show 0.15s ease-out;
+    }
+  
+    &--state-closing {
+      animation: szh-menu-hide 0.2s ease-out forwards;
+    }
+  
+    &__item {
+      border-radius: 6px;
+      width: 100%;
+      padding: 0.5rem 3rem;
+      color: #173B45;
+      text-align: center;
+
+      a{
+        text-decoration: none;
+        color: #173B45;
+      }
+
+      &--hover {
+        color: #224b56;
+      }
+    }
+}

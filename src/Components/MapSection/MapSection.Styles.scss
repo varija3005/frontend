@@ -1,0 +1,59 @@
+.map-section {
+    position: relative;
+    background-color: #E7D3B2;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .background{
+        background-color: #173B45;
+        width: 70%;
+        margin: auto;
+        height: 50vh;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+    }
+  
+    .map-container {
+      width: 60%;
+      margin: auto;
+      height: 70vh;
+      z-index: 5;
+      overflow: hidden;
+      border-radius: 1rem;
+  
+      .leaflet-container {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  
+@media only screen and (max-width: 768px) {
+  .map-section {
+    .map-container {
+      width: 65%;
+    }
+    
+    .background{
+      width: 80%;
+    }
+  }
+}
+  
+  
+@media only screen and (max-width: 470px) {
+  .map-section {
+    .map-container {
+      width: 75%;
+    }
+    .background{
+      width: 90%;
+    }
+  }
+}

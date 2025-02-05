@@ -1,0 +1,199 @@
+.product-page{
+    position: relative;
+    color: #173B45;
+
+    .nav{
+        width: 100%;
+    }
+
+    .content{
+        position: relative;
+        width: 70%;
+        min-height: 100vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .img-section{
+            width: 45%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .img-container{
+                position: relative;
+                width: 50%;
+                z-index: 10;
+                
+                img{
+                    width: 100%;
+                }
+            }
+
+            .background{
+                background: #173B45;
+                width: 90%;
+                height: 50%;
+                position: absolute;
+                z-index: 5;
+                border-radius: 10px;
+            }
+        }
+
+        .text-section{
+            width: 45%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .heading{
+                font-family: 'Roboto Condensed';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 4.8rem;
+                line-height: 5.6rem;
+                letter-spacing: 0.1em;
+            }
+
+            .prices{
+                padding-top: 1rem;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .mrp{
+                    color: #224b56;
+                    text-decoration: line-through;
+                    font-family: 'Roboto Condensed';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: 0.1em;
+                }
+
+                .price{
+                    font-family: 'Roboto Condensed';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 28px;
+                    letter-spacing: 0.1em;
+                }
+            }
+
+            .buttons-section{
+                padding-top: 2rem;
+
+                .quantity{
+                    font-family: 'Roboto Condensed';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 24px;
+                    letter-spacing: 0.1em;
+                }
+
+                .buttons{
+                    padding-top: 2rem;
+                    display: flex;
+                    align-items: center;
+
+                    .quantity-button{
+                        text-decoration: none;
+                        background-color: transparent;
+                        border: 1px solid #173B45;
+                        outline: none;
+                        padding: 5px 10px;
+                        color: #173B45;
+                        font-size: 2rem;
+                        font-family: "Roboto Flex", serif;
+                        font-weight: 300;
+                        font-style: normal;
+                        letter-spacing: 3px;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        transition: 0.5s;
+
+                        &:hover,
+                        &:active {
+                            background: #173B45;
+                            color: #fff;
+                        }
+                    }
+
+                    .number{
+                        font-family: 'Roboto Condensed';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 24px;
+                        letter-spacing: 0.1em;
+                        width: 5rem;
+                        text-align: center;
+                    }
+                }
+
+                .button{
+                    color: #fff;
+                    outline: none;
+                    border: 1px solid #173B45;
+                    transition: all 0.5s;
+                    background-color: #173B45;
+                    border-radius: 10px;
+                    font-family: 'Roboto Condensed';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: 0.1em;
+                    padding: 1.5rem 2rem;
+                    margin-top: 1rem;
+
+
+                    &:hover,
+                    &:active {
+                        background: #fff;
+                        color: #173B45;
+                    }
+                }
+            }
+
+            .details{
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                padding-top: 2rem;
+                font-family: 'Roboto Condensed';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: 0.1em;
+
+                .detail{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 5px 0;
+
+                    .property{
+                        width: 40%;
+                        font-weight: 400;
+                    }
+
+                    .value{
+                        width: 50%;
+                    }
+
+                    &:not(:last-child){  
+                        border-bottom: 1px solid #173B45;
+                    }
+                }
+            }
+        }
+    }
+}

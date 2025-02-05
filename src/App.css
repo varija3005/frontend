@@ -1,0 +1,38 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 57%;
+}
+
+body {
+  height: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 7.5px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #173B45;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 950px) {
+  html {
+    font-size: 57%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  html {
+    font-size: 50%;
+  }
+
+}

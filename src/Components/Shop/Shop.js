@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Shop.Styles.scss'
 import { FaSearch } from "react-icons/fa";
 import { LuSettings2 } from "react-icons/lu";
@@ -13,10 +13,10 @@ const Shop = () => {
     const [data, setData] = useState([])
     const [shopType, setShopType] = useState('') 
 
-    useState(() => {
+    useEffect(() => {
         if(location.pathname === '/wholesale') setShopType('wholesale')
         if(location.pathname === '/retail') setShopType('retail')
-        axios.get('http://localhost:5000/api/prod')
+        axios.get('https://ricehouse.in/backend/api/prod')
         .then(res => setData(res.data))
         .catch(err => {
             toast("Failed to Load", { 
@@ -25,7 +25,7 @@ const Shop = () => {
                 autoClose: 5000
             });
         })
-    }, [])
+    }, [location])
 
     const handleChange = (e) => {
         setSearch(e.target.value)

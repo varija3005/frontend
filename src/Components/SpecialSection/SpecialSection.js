@@ -11,8 +11,6 @@ const SpecialSection = () => {
   const location = useLocation()
   const [prod, setProd] = useState({})
 
-  console.log(location)
-
   useEffect(() => {
     axios
       .get('https://ricehouse.in/backend/api/prod/1')
@@ -26,8 +24,9 @@ const SpecialSection = () => {
           isLoading: false,
           autoClose: 5000,
         })
+        navigate(-1)
       })
-  })
+  }, [])
   return (
     <div className='special-section'>
       <div className='product'>

@@ -79,14 +79,14 @@ const AboutUsSection = () => {
 
       <div className='why-us-section'>
         <div className='content'>
-          <div className='column'>
+          <div className='column' data-aos='fade-up' data-aos-duration='1000'>
             <h4 className='sub-heading'>Why Choose Us?</h4>
             <h1 className='heading'>
               Your Trusted Partner for Quality, Variety and Reliability in Rice
             </h1>
           </div>
           <div className='list'>
-            <div className='item'>
+            <div className='item' data-aos='fade-up' data-aos-duration='1000'>
               <div className='icon'>
                 <FaRegCheckCircle />
               </div>
@@ -95,7 +95,7 @@ const AboutUsSection = () => {
                 unmatched quality and taste in every grain.
               </p>
             </div>
-            <div className='item'>
+            <div className='item' data-aos='fade-up' data-aos-duration='1000'>
               <div className='icon'>
                 <GiMultipleTargets />
               </div>
@@ -104,7 +104,7 @@ const AboutUsSection = () => {
                 varieties, rich in purity, aroma, and nutritional value.
               </p>
             </div>
-            <div className='item'>
+            <div className='item' data-aos='fade-up' data-aos-duration='1000'>
               <div className='icon'>
                 <FaHandshake />
               </div>
@@ -117,7 +117,7 @@ const AboutUsSection = () => {
         </div>
 
         <div className='image-section'>
-          <div className='text-container'>
+          <div className='text-container' data-aos='fade-up' data-aos-duration='1000'>
             <span className='quote'>
               <FaQuoteLeft />
             </span>
@@ -126,7 +126,7 @@ const AboutUsSection = () => {
               Grain.
             </span>
           </div>
-          <div className='img-container'>
+          <div className='img-container' data-aos='fade-up' data-aos-duration='1000'>
             <img src={whyUsImg} alt='why-us-img' />
           </div>
         </div>

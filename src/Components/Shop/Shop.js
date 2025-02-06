@@ -25,7 +25,7 @@ const Shop = () => {
                 autoClose: 5000
             });
         })
-    }, [location])
+    }, [])
 
     const handleChange = (e) => {
         setSearch(e.target.value)

@@ -1,6 +1,6 @@
 import React from 'react'
 import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi'
-import { FaFax } from 'react-icons/fa'
+import { FaWhatsapp } from "react-icons/fa6";
 
 import './ContactUsSection.Styles.scss'
 
@@ -15,31 +15,46 @@ const ContactUsSection = () => {
           </h1>
         </div>
         <div className='content' data-aos='fade-up' data-aos-duration='1000'>
-          <div className='address'>
-            <h3>Where To Find Us</h3>
-            <p>
-              #12/2-66 Krishanappa Layout, <br />
-              R.R Nagar, Karekodi Main Road, <br />
-              Hoskerehalli, Bangalore- 85
-            </p>
+          <div className='row contact'>
+            <div className='phone'>
+              <h3>Kanchana G</h3>
+              <h5>Director</h5>
+              <p>+91 97318 35143</p>
+              <p>+91 97413 87143</p>
+            </div>
+            <div className='phone'>
+              <h3>V Manoj Kumar</h3>
+              <h5>Proprietor</h5>
+              <p>+91 82969 35143</p>
+              <p>+91 85489 78808</p>
+            </div>
+            <div className='phone'>
+              <h3>Vinay C</h3>
+              <h5>Proprietor</h5>
+              <p>+91 96116 63106</p>
+              <p>+91 78928 59001</p>
+            </div>
           </div>
-          <div className='contact'>
+          <div className='row'>
+            <div className='address'>
+              <h3>Where To Find Us</h3>
+              <p>
+                #12/2-66 Krishanappa Layout, <br />
+                R.R Nagar, Karekodi Main Road, <br />
+                Hoskerehalli, Bangalore- 85
+              </p>
+            </div>
             <div className='mail'>
               <h3>Mail Us At</h3>
               <p>varija.3005@gmail.com</p>
             </div>
-            <div className='phone'>
-              <h3>Call Us At</h3>
-              <p>06-5583064</p>
-              <p>050-3828962</p>
-            </div>
           </div>
         </div>
         <div className='links'>
-          <a href='mailto:info@emperoreng.com' rel='noreferrer'>
+          <a href='mailto:varija.3005@gmail.com' rel='noreferrer'>
             <FiMail className='link' />
           </a>
-          <a href='tel:0503828962' rel='noreferrer'>
+          <a href='tel:8296935143' rel='noreferrer'>
             <FiPhone className='link' />
           </a>
           <a
@@ -49,8 +64,8 @@ const ContactUsSection = () => {
           >
             <FiMapPin className='link' />
           </a>
-          <a href='tel:+065593065' rel='noreferrer'>
-            <FaFax className='link' />
+          <a href='https://wa.me/918971545421' rel='noreferrer'>
+            <FaWhatsapp className='link' />
           </a>
         </div>
       </div>

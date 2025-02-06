@@ -198,6 +198,8 @@
   
   @media only screen and (max-width: 470px) {
     .landing-section {
+      background-attachment: scroll;
+
       .logo-container {
         left: 3rem;
       }

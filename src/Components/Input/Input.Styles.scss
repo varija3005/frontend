@@ -1,5 +1,6 @@
 .input-container{
-    margin-bottom: 3rem;    
+    margin-bottom: 3rem;  
+    position: relative;  
     .input {
         position: relative;
         font-family: 'Roboto Condensed';
@@ -11,19 +12,32 @@
         margin-bottom: 3rem;
         
         &__label {
-        position: absolute;
-        left: 0;
-        top: 0;
-        padding: 1rem;
-        margin: 1rem;
-        white-space: nowrap;
-        transform: translate(0, 0);
-        transform-origin: 0 0;
-        transition: all 120ms ease-in;
-        font-weight: bold;
-        line-height: 1.2;
-        background: #E7D3B2;
-        color: #173b4579;
+            position: absolute;
+            left: 0;
+            padding: 1rem;
+            margin: 1rem;
+            white-space: nowrap;
+            transform: translate(0, 0);
+            transform-origin: 0 0;
+            transition: all 120ms ease-in;
+            font-weight: bold;
+            line-height: 1.2;
+            background: #E7D3B2;
+            color: #173b4579;
+        }
+
+        @supports (-webkit-touch-callout: none) {
+            /* CSS specific to iOS devices */ 
+            &__label {
+                top: -6rem;
+            }
+        }
+
+        @supports not (-webkit-touch-callout: none) {
+            /* CSS for other than iOS devices */ 
+            &__label {
+                top: 0rem;
+            }
         }
 
         &__field {

@@ -48,6 +48,10 @@ const Login = () => {
       })
   }
 
+  const loginWithGoogle = () => {
+    window.open('http://localhost:5000/api/auth/google/callback', '_self')
+  }
+
   const handleClose = () => {
     navigate(-1)
   }
@@ -101,7 +105,7 @@ const Login = () => {
             <div className='line'></div>
             <div className='text'>or</div>
           </div>
-          <button className='googleLogin'>
+          <button className='googleLogin' onClick={loginWithGoogle}>
             <FcGoogle className='icon' /> Continue with Google
           </button>
         </div>

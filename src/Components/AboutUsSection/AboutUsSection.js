@@ -82,11 +82,7 @@ const AboutUsSection = () => {
           <div className='column'>
             <h4 className='sub-heading'>Why Choose Us?</h4>
             <h1 className='heading'>
-              Your Trusted Partner
-              <br />
-              for Quality, Variety
-              <br />
-              and Reliability in Rice
+              Your Trusted Partner for Quality, Variety and Reliability in Rice
             </h1>
           </div>
           <div className='list'>

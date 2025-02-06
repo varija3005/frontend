@@ -25,7 +25,7 @@ const Login = () => {
   const handleLogin = async () => {
     const id = toast.loading('Please wait...')
     await axios
-      .post(`http://localhost:5000/api/auth`, { phone, password })
+      .post(`https://ricehouse.in/backend/api/auth`, { phone, password })
       .then(res => {
         localStorage.setItem('token', JSON.stringify(res.data.token))
         toast.update(id, {

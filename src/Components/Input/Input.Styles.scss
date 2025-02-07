@@ -52,7 +52,7 @@
             font-family: 'Roboto Condensed';
             font-style: normal;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 1.6rem;
             line-height: 2rem;
             letter-spacing: 0.1em;
             
@@ -65,4 +65,39 @@
             }
         }
     }
+}
+
+@media only screen and (max-width: 768px) {
+    .input-container{
+      margin-bottom: 2rem;  
+
+      .input{
+        font-size: 1.4rem;
+        line-height: 2rem;
+
+        &__label{
+            padding: 0.8rem;
+            margin: 0.8rem;
+        }
+
+        @supports (-webkit-touch-callout: none) {
+            /* CSS specific to iOS devices */ 
+            &__label {
+                top: -4.7rem;
+            }
+        }
+
+        @supports not (-webkit-touch-callout: none) {
+            /* CSS for other than iOS devices */ 
+            &__label {
+                top: 0rem;
+            }
+        }
+
+        &__field {
+            padding: 1.3rem;
+        }
+      }
+    }
+    
 }

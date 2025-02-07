@@ -154,7 +154,7 @@
     text-transform: uppercase;
     border-bottom: 1px solid #E7D3B2;
     color: #E7D3B2;
-    font-family: poppins;
+    font-family: 'Roboto Condensed';
     font-size: 3rem;
     letter-spacing: 3px;
     background-size: 100% 200%;
@@ -191,7 +191,7 @@
   }
 
   .text {
-    font-family: roboto;
+    font-family: 'Roboto Condensed';
     font-size: 2rem;
     letter-spacing: 1.5px;
     line-height: 2.4rem;
@@ -244,6 +244,7 @@
 @media only screen and (max-width: 470px) {
   .menu-button {
     right: 3rem;
+    width: 4rem;
   }
 
   .menu {

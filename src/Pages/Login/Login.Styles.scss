@@ -57,22 +57,19 @@
         transform: translate(-50%, -50%);
         z-index: 10;
         color: #e7d3b2;
-        .heading-container {
-          display: flex;
-          flex-direction: column;
-          gap: 12px;
+
+        .heading {
+          width: 30%;
+          font-family: 'Roboto Condensed';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 6rem;
+          line-height: 56px;
+          letter-spacing: -2px;
+          text-align: left;
           padding-bottom: 3rem;
-          .heading {
-            margin: auto;
-            font-family: 'Roboto Condensed';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 6rem;
-            line-height: 56px;
-            letter-spacing: -2px;
-            text-align: left;
-          }
         }
+
         .text {
           font-family: 'Roboto Condensed';
           font-style: normal;
@@ -193,13 +190,42 @@
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .login-page {
+    .content {
+      width: 80%;
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .login-page {
     .content {
+      .img-container{
+        .welcome{
+          .heading{
+            width: 100%;
+            font-size: 4rem;
+            line-height: 4.6rem;
+          }
+        }
+      }
+      
       .login-container {
+        .inputs{
+          width: 80%;
+        }
+
+        .buttons-container{
+          .button{
+            font-size: 1.6rem;
+            padding: 1rem 2rem;
+          }
+        }
+
         .googleLogin {
           width: 80%;
-          font-size: 1.4rem;
+          font-size: 1.6rem;
           padding: 1rem 1rem;
           border-radius: 1rem;
         }
@@ -213,57 +239,68 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-      border-radius: 34px;
-      .close {
-        display: none;
-      }
-      .login-container {
-        width: 90%;
-        .buttons-container {
-          .button {
-            margin: 0rem;
-          }
-        }
-        .input {
-          width: 80%;
-        }
-        .googleLogin {
-          width: 60%;
-          padding: 1rem 1rem;
-          border-radius: 1rem;
-        }
-        .logo-container {
-          padding-bottom: 1rem;
-        }
-      }
+
       .img-container {
         width: 90%;
-        height: 50%;
+        height: 35%;
+
         .welcome {
           width: 100%;
           padding: 0 3rem;
-          .text:first-of-type {
-            font-size: 14px;
-            padding-bottom: 1rem;
-          }
-          .text {
-            font-size: 12px;
-          }
+
           .heading-container {
-            display: flex;
-            flex-direction: row;
-            gap: 12px;
-            padding-bottom: 0rem;
             .heading {
               margin: 0px;
-              font-size: 4rem;
+              font-size: 3rem;
+              line-height: 3.5rem;
             }
+          }
+
+          .text{
+            font-size: 12px;
+            line-height: 16px;
           }
         }
       }
+      
+      .close {
+        font-size: 5rem;
+        top: calc(35% + 2rem);
+        right: 4rem;
+      }
+
+      .login-container {
+        width: 90%;
+
+        .logo-container {
+          font-size: 3rem;
+          padding-bottom: 2rem;
+        }
+
+        .inputs{
+          width: 70%;
+        }
+
+        .buttons-container{
+          .button{
+            margin: auto;
+            padding: 1rem 3rem;
+            letter-spacing: 1px;
+          }
+        }
+
+        .space{
+          margin: 2.5rem auto;
+          width: 70%;
+        }
+
+        .googleLogin {
+          width: 60%;
+          font-size: 1.6rem;
+          padding: 1rem 1rem;
+          border-radius: 1rem;
+        }
+      }
     }
-  }
-  .input-container {
-    margin-bottom: 0.5rem;
   }
 }

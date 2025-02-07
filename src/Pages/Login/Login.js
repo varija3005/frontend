@@ -66,10 +66,7 @@ const Login = () => {
           <img src={signUpImg} alt='login-img' />
           <div className='background'></div>
           <div className='welcome'>
-            <div className='heading-container'>
-              <h1 className='heading'>Welcome</h1>
-              <h1 className='heading'>Back .</h1>
-            </div>
+            <h1 className='heading'>Welcome Back.</h1>
             <p className='text'>
               Please enter you credentials to explore the finest rice varieties
               and manage your account effortlessly.

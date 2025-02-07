@@ -71,8 +71,7 @@ const SignUp = () => {
           <div className='background'></div>
           <div className='welcome'>
             <div className='heading-container'>
-              <h1 className='heading'>Create Your</h1>
-              <h1 className='heading'>Account.</h1>
+              <h1 className='heading'>Create Your Account!</h1>
             </div>
             <p className='text'>
               Sign up to access premium rice selections and exclusive deals

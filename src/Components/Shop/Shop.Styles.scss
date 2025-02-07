@@ -40,7 +40,6 @@
         &__label {
           position: absolute;
           left: 0;
-          top: 0;
           padding: 1rem;
           margin: 1rem;
           white-space: nowrap;
@@ -52,6 +51,20 @@
           background: white;
           color: #173b4579;
         }
+
+        @supports (-webkit-touch-callout: none) {
+          /* CSS specific to iOS devices */ 
+          &__label {
+              top: -6rem;
+          }
+      }
+
+      @supports not (-webkit-touch-callout: none) {
+          /* CSS for other than iOS devices */ 
+          &__label {
+              top: 0rem;
+          }
+      }
       }
 
       .input-field {

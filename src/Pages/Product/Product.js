@@ -17,7 +17,7 @@ const Product = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/api/prod/${id}`)
+        axios.get(`https://ricehouse.in/backend/api/prod/${id}`)
         .then(res => {
             setProduct(res.data)
         })

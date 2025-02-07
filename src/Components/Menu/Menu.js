@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { scroller } from 'react-scroll'
 import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi'
-import { FaFax } from 'react-icons/fa'
-import logoFullPng from '../../Assets/logo-full.png'
-import logoFullWebp from '../../Assets/logo-full.webp'
+import { FaWhatsapp } from "react-icons/fa6";
 
 import './Menu.Styles.scss'
 
@@ -69,17 +67,17 @@ const Menu = ({color}) => {
                     </div>
                     <div className='text'>Our team at Rice House aim to provide best products at affordable prices. We assure you of the highest quality services, business integrity, and cooperation.</div>
                     <div className='links'>
-                        <a href='mailto:info@emperoreng.com' rel='noreferrer'>
+                        <a href='mailto:varija.3005@gmail.com' rel='noreferrer'>
                             <FiMail className='link' />
                         </a>
-                        <a href='tel:0503828962' rel='noreferrer'>
+                        <a href='tel:8296935143' rel='noreferrer'>
                             <FiPhone className='link' />
                         </a>
                         <a href='https://maps.app.goo.gl/KzMGdqWkogRHqBqV6' target='_blanck' rel='noreferrer'>
                             <FiMapPin className='link' />
                         </a>
-                        <a href='tel:+065593065' rel='noreferrer'>
-                            <FaFax className='link' />
+                        <a href='https://wa.me/918971545421' rel='noreferrer'>
+                            <FaWhatsapp className='link' />
                         </a>
                     </div>
                 </div>

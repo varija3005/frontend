@@ -39,7 +39,7 @@ const LandingSection = () => {
             <div className='text' data-aos="fade-up" data-aos-duration="1000" data-aos-delay='100'>
                 <span className='sub-heading'>Since 1975</span>
                 <div className='name'>Rice House</div>
-                <span className='sub-heading'>Wholesale and Retail Rice Dealers</span>
+                <span className='sub-heading'>Quickest B2B & B2C  E-Commerce Website</span>
                 <div className='links'>
                     <Link className='nav-option' to='/wholesale'>
                         <button className='button'>Buy Wholesale</button>

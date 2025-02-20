@@ -45,9 +45,9 @@ const Product = () => {
     const handleCart = async () => {
         const toastId = toast.loading("Please wait...")
         const token = localStorage.token
-        setAuthToken(JSON.parse(token));
         if(token) {
-            await axios.post('http://localhost:5000/api/cart/add', {prodId: id, quantity})
+            setAuthToken(JSON.parse(token));
+            await axios.post('https://ricehouse.in/backend/api/cart/add', {prodId: id, quantity})
             .then(res => {
                 toast.update(toastId, { 
                     render: "Added to Cart", 
@@ -66,7 +66,8 @@ const Product = () => {
                 });
             })
         } else {
-            toast("Please Login", { 
+            toast.update(toastId, { 
+                render: "Please login to add products to cart",
                 type: "error", 
                 isLoading: false,
                 autoClose: 5000

@@ -167,7 +167,7 @@ const Cart = () => {
             <span className='total'>Total</span>
             <span className='amt'>₹ {cart.bill}</span>
           </div>
-          <button className='order-button' onClick={openDialog}>Buy Now</button>
+          <button className='order-button' style={{display: cart.products && cart.products.length ? 'flex' : 'none'}} onClick={openDialog}>Buy Now</button>
         </div>
       </div>
       <div className='footer'>

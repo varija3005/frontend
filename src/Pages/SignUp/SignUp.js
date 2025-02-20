@@ -30,7 +30,7 @@ const SignUp = () => {
   const handleSignUp = async () => {
     const id = toast.loading('Please wait...')
     await axios
-      .post(`http://ricehouse.in/backend/api/users`, { name, phone, password })
+      .post(`https://ricehouse.in/backend/api/users`, { name, phone, password })
       .then(res => {
         localStorage.setItem('token', JSON.stringify(res.data.token))
         toast.update(id, {
